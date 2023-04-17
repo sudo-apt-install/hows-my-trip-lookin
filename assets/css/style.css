@@ -1,7 +1,52 @@
-#primary-container{
+body{
+    background-color: #030d22;
+}
+
+#box-1{
+    /* background-color: #f72879; */
+}
+
+.card{
+    background-color: rgb(205, 203, 203);
+}
+
+.btn{
+    background-color: #1c1347;
+    color: #ff2e97;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#header-container{
     background: linear-gradient(90deg, rgba(254,252,253,1) 0%, rgba(0,146,255,1) 37%, rgba(61,9,121,1) 93%);
     color: white;
 }
 
-#box-1{
+h1, h2{
+    color: #fad101;
+    text-align: center;
+}
+
+
+
+#current-location{
+    border: 2px solid black;
+    background-color: aqua;
+    margin-top: 1%;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

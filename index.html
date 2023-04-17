@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,30 +16,27 @@
   </head>
 
   <body>
-    <div class="container-fluid" id="primary-container">
+    <div class="container-fluid" id="header-container">
       <h1 class="text-center">Weather Dashboard</h1>
       <br />
     </div>
-
-    <div class="container-fluid">
-    </div>
-
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3" id="box-1">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Search for a City: </h5>
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        </form>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>                
-            </div>
-            <div class="col-9" id="box-2">
+          <div class="col-2" id="box-1" id="search-box">
+            <form>
+              <div class="form-group">
+                <h2>Search for a City: </h2>
+                <input type="search" class="form-control" id="chosen-city" aria-describedby="desired-location" placeholder="Austin">
+                <button type="submit" class="btn btn-primary mb-2 w-100">Check the Forecast</button>
+              </div>
+            </form>
+          </div>
+            <div class="col-10" id="box-2" id="current-location">
             </div>
     </div>
+
+    <!-- Added link to the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script src="./assets/js/script.js"></script>
   </body>
