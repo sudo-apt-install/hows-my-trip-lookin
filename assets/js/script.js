@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     fetch(queryURL)
       .then((response) => {
-        return response.json();
+        return response.json(); //ToDo
       })
       .then((data) => {
         console.log(data);
