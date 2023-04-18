@@ -36,6 +36,15 @@ p{
     width: 20vw;
 }
 
+.card{
+    display: inline-block;
+    width: 20%;
+    margin: 5%;
+}
+.card-styling{
+    background-color: #0069d9;
+}
+
 button:hover{
     transform: translateY(-10px);
     box-shadow: 0px 0px 15px #fff;
@@ -76,6 +85,14 @@ button:hover{
 #check-forecast{
     margin-top: 4%;
     margin-bottom: 4%;
+}
+
+#forecast-row{
+    justify-content: center;
+}
+
+#forecast-header{
+    margin-top: 2%;
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
