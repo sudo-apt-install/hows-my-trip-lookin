@@ -1,27 +1,6 @@
 body{
     background-color: #030d22;
 }
-
-#box-1{
-    /* background-color: #f72879; */
-}
-
-.card{
-    background-color: rgb(205, 203, 203);
-}
-
-.btn{
-    background-color: #1c1347;
-    color: #ff2e97;
-    font-size: larger;
-    font-weight: bolder;
-}
-
-#header-container{
-    background: linear-gradient(90deg, rgba(254,252,253,1) 0%, rgba(0,146,255,1) 37%, rgba(61,9,121,1) 93%);
-    color: white;
-}
-
 h1, h2{
     color: #fad101;
     text-align: center;
@@ -33,20 +12,51 @@ p{
     font-weight: bolder;
 }
 
+.col-9{
+    max-width: 72%;
+}
+
+.btn{
+    background-color: #1c1347;
+    color: #ff2e97;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#box-1{
+    /* background-color: #f72879; */
+    margin-top: 1%;
+    margin-right: 1%;
+    border-bottom: 1px solid #292d72;
+}
+
+
+#header-container{
+    background: linear-gradient(90deg, rgba(254,252,253,1) 0%, rgba(0,146,255,1) 37%, rgba(61,9,121,1) 93%);
+    color: white;
+}
+
+
 #current-city{
-    color: #1754c4;
+    color: #0df3ff;
     text-align: left;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
 #current-location{
-    border: 2px solid #19c1e2;
     background-color: aqua;
-    margin-top: 1%;
-
 }
 
+#box-2{
+    border: 2px solid #19c1e2;
+    margin-top: 1%;   
+}
+
+#check-forecast{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
