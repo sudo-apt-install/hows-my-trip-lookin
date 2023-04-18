@@ -47,8 +47,15 @@ $(document).ready(function () {
         
         for (var i = 0; i < localStorage.length; i++){
           var previousCityButton = document.createElement('button');
+          $('#previous-searches').append(previousCityButton);
           $(previousCityButton).text(localStorage.getItem(localStorage.key(i)));
+          previousCityButton.setAttribute("class", 'prev');
         }
+
+        $(".prev").on("click", function(event) {
+          alert('Ding!')
+        })
+
       });
 
     fetch(queryURL2)

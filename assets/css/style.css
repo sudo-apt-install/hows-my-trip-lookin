@@ -23,6 +23,26 @@ p{
     font-weight: bolder;
 }
 
+.prev{
+    display: block;
+    background-color: #1c1347;
+    border-color: #0069d9;
+    color: #ff2e97;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    margin: 3%;
+    width: 20vw;
+}
+
+button:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 15px #fff;
+    background-color: #0069d9;
+    color: #fff;
+}
+
 #box-1{
     /* background-color: #f72879; */
     margin-top: 1%;
