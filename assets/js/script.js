@@ -5,6 +5,39 @@ $(document).ready(function () {
 
   var c = 1; // c is for "counter" (counts to add a number to each searched city in the local storage)
 
+  var forecastCards = [
+    {
+      forecastDate: document.getElementById("card-date-1"),
+      forecastTemp: document.getElementById("forecast-temp-1"),
+      forecastWind: document.getElementById("forecast-wind-1"),
+      forecastHumidity: document.getElementById("forecast-humidity-1"),
+    },
+    {
+      forecastDate: document.getElementById("card-date-2"),
+      forecastTemp: document.getElementById("forecast-temp-2"),
+      forecastWind: document.getElementById("forecast-wind-2"),
+      forecastHumidity: document.getElementById("forecast-humidity-2"),
+    },
+    {
+      forecastDate: document.getElementById("card-date-3"),
+      forecastTemp: document.getElementById("forecast-temp-3"),
+      forecastWind: document.getElementById("forecast-wind-3"),
+      forecastHumidity: document.getElementById("forecast-humidity-3"),
+    },
+    {
+      forecastDate: document.getElementById("card-date-4"),
+      forecastTemp: document.getElementById("forecast-temp-4"),
+      forecastWind: document.getElementById("forecast-wind-4"),
+      forecastHumidity: document.getElementById("forecast-humidity-4"),
+    },
+    {
+      forecastDate: document.getElementById("card-date-5"),
+      forecastTemp: document.getElementById("forecast-temp-5"),
+      forecastWind: document.getElementById("forecast-wind-5"),
+      forecastHumidity: document.getElementById("forecast-humidity-5"),
+    },
+  ];
+
   function searchCity(city) {
     //This query checks the weather
     var queryURL =
@@ -63,6 +96,11 @@ $(document).ready(function () {
       })
       .then((data) => {
         console.log(data);
+
+        for(var j = 0; j < forecastCards.length; j++){
+          forecastCards[j].forecastDate.textContent = dayjs().add(j + 1, 'day').format('MMMM D, YYYY');
+        }
+
       });
   }
 
@@ -86,3 +124,9 @@ $(document).ready(function () {
     }
   });
 });
+
+/*
+data-->list-->[index (every 7)]-->main-->temp
+data-->list-->[index (every 7)]-->main-->Humidity
+data-->list-->[index (every 7)]-->wind-->speed
+*/
