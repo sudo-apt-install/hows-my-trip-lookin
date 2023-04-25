@@ -21,6 +21,8 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
+![Site in Action](./assets/Images/How's%20My%20Trip%20Lookin_.gif)
+
 ## Links
 
 ### [Github Pages](https://sudo-apt-install.github.io/hows-my-trip-lookin/)
