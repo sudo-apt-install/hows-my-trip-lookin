@@ -41,7 +41,7 @@ $(document).ready(function () {
   function searchCity(city) {
     //This query checks the weather
     var queryURL =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&appid=" +
       APIkey;
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
     // This query checks the forecast
     var queryURL2 =
-      "http://api.openweathermap.org/data/2.5/forecast?q=" +
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&appid=" +
       APIkey;
